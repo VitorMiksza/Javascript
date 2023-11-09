@@ -21,9 +21,16 @@
 
 
     <script>
+
+        window.alert ('Olá. Por favor me diga dois números')
         
-        var nome = window.prompt('Qual seu nome?') // popup com um campo para inserção de informações
-        window.alert ('Muito prazer em te conhecer, ' + nome+' !') // O + é uma concatenação
+        var n1 = Number.parseInt (window.prompt('Primeiro número:') ) // O javasrcipt nativamente fica em duvida dobre qual função o + terá na função, então ele pré configura baseando se nos objetos a serem referidos 
+        
+        var n2 = Number.parseInt (window.prompt('Segundo número:'))
+
+        var n3 = n1 + n2
+
+        window.alert ('A soma dos números informados fora de: ' + n3)
     </script>
 
 </body>
